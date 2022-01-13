@@ -4,6 +4,63 @@
   
   
   <entry>
+    <title>排序算法</title>
+    <link href="/2022/01/14/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <url>/2022/01/14/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p>特点：稳定、对于链表也没问题</p><p>tips：</p><p>​    设置一个flag标记，用来标记冒泡排序过程中是否发生了交换。如果没有发生交换，则说明数组已经有序，任务完成，可以退出循环，提高效率。</p><figure class="highlight c"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></div></td><td class="code"><pre><code class="hljs c"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Bubble_Sort</span><span class="hljs-params">(ElementType a[],<span class="hljs-keyword">int</span> n)</span></span>&#123;<br><span class="hljs-keyword">int</span> flag = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = n<span class="hljs-number">-1</span>; i &gt;= <span class="hljs-number">0</span>; i--)&#123;<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; i; j++)&#123;<br><span class="hljs-keyword">if</span>(a[j] &gt; a[j+<span class="hljs-number">1</span>])&#123;<br>Swap(&amp;a[j],&amp;a[j+<span class="hljs-number">1</span>]);<br>flag = <span class="hljs-number">0</span>;<br>&#125;<br>&#125;<br><span class="hljs-keyword">if</span>(flag == <span class="hljs-number">1</span>)<br><span class="hljs-keyword">break</span>;<br>&#125;<br>&#125;<br></code></pre></td></tr></table></figure><h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><p>特点：稳定。</p><h2 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>数据结构与算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>电影</title>
+    <link href="/2022/01/13/%E7%94%B5%E5%BD%B1/"/>
+    <url>/2022/01/13/%E7%94%B5%E5%BD%B1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="电影"><a href="#电影" class="headerlink" title="电影"></a>电影</h1><h2 id="战争"><a href="#战争" class="headerlink" title="战争"></a>战争</h2><h3 id="《1917》"><a href="#《1917》" class="headerlink" title="《1917》"></a>《1917》</h3><figure class="highlight markdown"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs markdown">&#123;% note info 和爱豆一起看的第一个，真好看，一镜到底太爽了 %&#125;<br></code></pre></td></tr></table></figure><h3 id="《血战钢锯岭》"><a href="#《血战钢锯岭》" class="headerlink" title="《血战钢锯岭》"></a>《血战钢锯岭》</h3><h3 id="《决战中途岛》"><a href="#《决战中途岛》" class="headerlink" title="《决战中途岛》"></a>《决战中途岛》</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% note success  画面挺震撼的，但沉浸感好像不强 %&#125;<br></code></pre></td></tr></table></figure><h3 id="《拯救大兵瑞恩》"><a href="#《拯救大兵瑞恩》" class="headerlink" title="《拯救大兵瑞恩》"></a>《拯救大兵瑞恩》</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% note success  经典老片了，很好看 %&#125;<br></code></pre></td></tr></table></figure><hr><h3 id="《沉默的羔羊》"><a href="#《沉默的羔羊》" class="headerlink" title="《沉默的羔羊》"></a>《沉默的羔羊》</h3><h3 id="《绿皮书》"><a href="#《绿皮书》" class="headerlink" title="《绿皮书》"></a>《绿皮书》</h3><h3 id="《怦然心动》"><a href="#《怦然心动》" class="headerlink" title="《怦然心动》"></a>《怦然心动》</h3><hr><h2 id="国产"><a href="#国产" class="headerlink" title="国产"></a>国产</h2><h3 id="《活着》"><a href="#《活着》" class="headerlink" title="《活着》"></a>《活着》</h3><h3 id="《霸王别姬》"><a href="#《霸王别姬》" class="headerlink" title="《霸王别姬》"></a>《霸王别姬》</h3><h3 id="《芳华》"><a href="#《芳华》" class="headerlink" title="《芳华》"></a>《芳华》</h3><h3 id="《我不是药神》"><a href="#《我不是药神》" class="headerlink" title="《我不是药神》"></a>《我不是药神》</h3>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>电影</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>网页重构</title>
+    <link href="/2022/01/13/%E7%BD%91%E9%A1%B5%E9%87%8D%E6%9E%84/"/>
+    <url>/2022/01/13/%E7%BD%91%E9%A1%B5%E9%87%8D%E6%9E%84/</url>
+    
+    <content type="html"><![CDATA[<h1 id="网页重构"><a href="#网页重构" class="headerlink" title="网页重构"></a>网页重构</h1><h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><h3 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h3><h3 id="输入框"><a href="#输入框" class="headerlink" title="输入框"></a>输入框</h3><figure class="highlight html"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;username&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;用户名&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;pwd&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;密码&quot;</span>&gt;</span><br></code></pre></td></tr></table></figure><p>Placeholder ：用于显示输入框中的提示信息</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;username&quot;</span>&gt;</span>用户名<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><br></code></pre></td></tr></table></figure><h3 id="下拉框"><a href="#下拉框" class="headerlink" title="下拉框"></a>下拉框</h3><h3 id="单选框"><a href="#单选框" class="headerlink" title="单选框"></a>单选框</h3><h3 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h3><h3 id="HTML元素的分类"><a href="#HTML元素的分类" class="headerlink" title="HTML元素的分类"></a>HTML元素的分类</h3><h4 id="块元素：宽高可以设置，独立成行-h1-h6-p-div-ul-li"><a href="#块元素：宽高可以设置，独立成行-h1-h6-p-div-ul-li" class="headerlink" title="块元素：宽高可以设置，独立成行 h1-h6,p,div,ul,li"></a>块元素：宽高可以设置，独立成行 h1-h6,p,div,ul,li</h4><h4 id="行内元素：宽高不可以设置，不独立成行-a-span"><a href="#行内元素：宽高不可以设置，不独立成行-a-span" class="headerlink" title="行内元素：宽高不可以设置，不独立成行 a,span"></a>行内元素：宽高不可以设置，不独立成行 a,span</h4><h4 id="行内块元素：宽高可以设置，不独立成行-img-input-button"><a href="#行内块元素：宽高可以设置，不独立成行-img-input-button" class="headerlink" title="行内块元素：宽高可以设置，不独立成行 img,input,button"></a>行内块元素：宽高可以设置，不独立成行 img,input,button</h4><h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>只要在想清楚浮动的容器上，再加一个名为clear的class即可</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-comment">/*  把before和after转换为块元素，并且块元素的内容content是空的 */</span><br>        <span class="hljs-selector-class">.clear</span><span class="hljs-selector-pseudo">::before</span>,<span class="hljs-selector-class">.clear</span><span class="hljs-selector-pseudo">::after</span>&#123;<br>            <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;<br>            <span class="hljs-attribute">display</span>: block;<br>            <span class="hljs-attribute">clear</span>: both;<br>        &#125;<br></code></pre></td></tr></table></figure><h3 id="子绝父相"><a href="#子绝父相" class="headerlink" title="子绝父相"></a>子绝父相</h3><p>子元素以父元素为参照物，随着网页大小改变，父子元素相对位置不变</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-class">.pic-box</span>&#123;<br>            <span class="hljs-attribute">width</span>: <span class="hljs-number">628px</span>;<br>            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;<br>            <span class="hljs-attribute">position</span>: relative;<br>        &#125;<br>        <span class="hljs-selector-class">.list</span>&#123;<br>            <span class="hljs-attribute">position</span>: absolute;<br>            <span class="hljs-attribute">left</span>: <span class="hljs-number">100px</span>;<br>            <span class="hljs-attribute">top</span>: <span class="hljs-number">200px</span>;<br>        &#125;<br></code></pre></td></tr></table></figure><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pic-box&quot;</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/success.jpeg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list&quot;</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure><h3 id="border在盒子内部显示"><a href="#border在盒子内部显示" class="headerlink" title="border在盒子内部显示"></a>border在盒子内部显示</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid blue;<br><span class="hljs-attribute">box-sizing</span>: border-box;<br></code></pre></td></tr></table></figure><p>​    box-sizing: border-box;    边框在盒子模型内部显示，不会挤跑外面的</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>前端</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>我的第一篇博客文章</title>
     <link href="/2022/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
     <url>/2022/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>

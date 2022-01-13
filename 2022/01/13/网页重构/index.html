@@ -16,20 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第一章内容 第二章内容">
+    <meta name="description" content="网页重构表单按钮输入框12&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;username&quot; placeholder&#x3D;&quot;用户名&quot;&gt;&lt;input type&#x3D;&quot;password&quot; id&#x3D;&quot;pwd&quot; placeholder&#x3D;&quot;密码&quot;&gt;  Placeholder ：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="http://example.com/2022/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="网页重构">
+<meta property="og:url" content="http://example.com/2022/01/13/%E7%BD%91%E9%A1%B5%E9%87%8D%E6%9E%84/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章内容 第二章内容">
+<meta property="og:description" content="网页重构表单按钮输入框12&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;username&quot; placeholder&#x3D;&quot;用户名&quot;&gt;&lt;input type&#x3D;&quot;password&quot; id&#x3D;&quot;pwd&quot; placeholder&#x3D;&quot;密码&quot;&gt;  Placeholder ：">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-10T03:45:23.000Z">
-<meta property="article:modified_time" content="2022-01-10T03:50:58.276Z">
+<meta property="article:published_time" content="2022-01-13T04:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-13T10:32:49.488Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>我的第一篇博客文章 - Hexo</title>
+  <title>网页重构 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -175,7 +176,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="我的第一篇博客文章">
+            <span class="h2" id="subtitle" title="网页重构">
               
             </span>
 
@@ -185,8 +186,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-01-10 11:45" pubdate>
-        January 10, 2022 am
+      <time datetime="2022-01-13 12:00" pubdate>
+        January 13, 2022 pm
       </time>
     </span>
   
@@ -196,7 +197,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      10 字
+      1k 字
     </span>
   
 
@@ -205,7 +206,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1 分钟
+      9 分钟
     </span>
   
 
@@ -234,18 +235,40 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">我的第一篇博客文章</h1>
+            <h1 style="display: none">网页重构</h1>
             
             <div class="markdown-body">
-              <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
+              <h1 id="网页重构"><a href="#网页重构" class="headerlink" title="网页重构"></a>网页重构</h1><h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><h3 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h3><h3 id="输入框"><a href="#输入框" class="headerlink" title="输入框"></a>输入框</h3><figure class="highlight html"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;username&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;用户名&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;pwd&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;密码&quot;</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>Placeholder ：用于显示输入框中的提示信息</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;username&quot;</span>&gt;</span>用户名<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="下拉框"><a href="#下拉框" class="headerlink" title="下拉框"></a>下拉框</h3><h3 id="单选框"><a href="#单选框" class="headerlink" title="单选框"></a>单选框</h3><h3 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h3><h3 id="HTML元素的分类"><a href="#HTML元素的分类" class="headerlink" title="HTML元素的分类"></a>HTML元素的分类</h3><h4 id="块元素：宽高可以设置，独立成行-h1-h6-p-div-ul-li"><a href="#块元素：宽高可以设置，独立成行-h1-h6-p-div-ul-li" class="headerlink" title="块元素：宽高可以设置，独立成行 h1-h6,p,div,ul,li"></a>块元素：宽高可以设置，独立成行 h1-h6,p,div,ul,li</h4><h4 id="行内元素：宽高不可以设置，不独立成行-a-span"><a href="#行内元素：宽高不可以设置，不独立成行-a-span" class="headerlink" title="行内元素：宽高不可以设置，不独立成行 a,span"></a>行内元素：宽高不可以设置，不独立成行 a,span</h4><h4 id="行内块元素：宽高可以设置，不独立成行-img-input-button"><a href="#行内块元素：宽高可以设置，不独立成行-img-input-button" class="headerlink" title="行内块元素：宽高可以设置，不独立成行 img,input,button"></a>行内块元素：宽高可以设置，不独立成行 img,input,button</h4><h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>只要在想清楚浮动的容器上，再加一个名为clear的class即可</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-comment">/*  把before和after转换为块元素，并且块元素的内容content是空的 */</span><br>        <span class="hljs-selector-class">.clear</span><span class="hljs-selector-pseudo">::before</span>,<span class="hljs-selector-class">.clear</span><span class="hljs-selector-pseudo">::after</span>&#123;<br>            <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;<br>            <span class="hljs-attribute">display</span>: block;<br>            <span class="hljs-attribute">clear</span>: both;<br>        &#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="子绝父相"><a href="#子绝父相" class="headerlink" title="子绝父相"></a>子绝父相</h3><p>子元素以父元素为参照物，随着网页大小改变，父子元素相对位置不变</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-class">.pic-box</span>&#123;<br>            <span class="hljs-attribute">width</span>: <span class="hljs-number">628px</span>;<br>            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;<br>            <span class="hljs-attribute">position</span>: relative;<br>        &#125;<br>        <span class="hljs-selector-class">.list</span>&#123;<br>            <span class="hljs-attribute">position</span>: absolute;<br>            <span class="hljs-attribute">left</span>: <span class="hljs-number">100px</span>;<br>            <span class="hljs-attribute">top</span>: <span class="hljs-number">200px</span>;<br>        &#125;<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pic-box&quot;</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/success.jpeg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list&quot;</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="border在盒子内部显示"><a href="#border在盒子内部显示" class="headerlink" title="border在盒子内部显示"></a>border在盒子内部显示</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid blue;<br><span class="hljs-attribute">box-sizing</span>: border-box;<br></code></pre></td></tr></table></figure>
+
+<p>​    box-sizing: border-box;    边框在盒子模型内部显示，不会挤跑外面的</p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+                    
+                  </div>
                 
               </div>
               
@@ -260,9 +283,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/01/13/%E7%BD%91%E9%A1%B5%E9%87%8D%E6%9E%84/">
+                      <a href="/2022/01/13/%E7%94%B5%E5%BD%B1/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">网页重构</span>
+                        <span class="hidden-mobile">电影</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -270,8 +293,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/01/09/hello-world/">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2022/01/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
+                        <span class="hidden-mobile">我的第一篇博客文章</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
