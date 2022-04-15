@@ -24,7 +24,7 @@
 <meta property="og:description" content="前后端分离传统的javaweb开发方式中，无论是采用jsp+servelt或者是采用Spring框架。都有一个问题，就是怎么把后端的数据，添加到前端页面中，并渲染到DOM中显示给用户。前端写好静态页面，再由后端人员把静态页面转成jsp。一旦这时候出现了什么问题，两个人的交流成本很大。而且，前端的代码和后端的代码，就是直接混合在一起，耦合度太高，开发效率低，维护成本高。 采用前后端分离的方式进行开发">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-11T05:41:03.000Z">
-<meta property="article:modified_time" content="2022-03-17T05:09:27.050Z">
+<meta property="article:modified_time" content="2022-04-07T08:47:06.629Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="考研">
 <meta name="twitter:card" content="summary_large_image">
@@ -197,7 +197,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.2k 字
+      3.5k 字
     </span>
   
 
@@ -206,7 +206,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      10 分钟
+      29 分钟
     </span>
   
 
@@ -254,6 +254,34 @@
 <p>​    传统的前端和后端发生交互时，页面整个刷新，开销大，用户体验差。前端通过ajax访问后端的 RESTful 接口做通讯，异步刷新页面的某个区块，通过这种方式，来提高效率，优化体验。</p>
 <p>​    MVVM：Model、View、ViewModel。Model代表的是数据，对应到前端就是JavaScript对象；View对应的是视图，对应到浏览器就是DOM；他们两个通过ViewModel做通讯，ViewModel实现了一个Observer观察者，当数据发生变化时，ViewModel可以观察到，并把他反应到DOM上，也就是通知对应的需要改变的DOM结点自动更新；当用户操作DOM时，ViewModel也可以观察到，并把相应的数据发生改变，这样就实现了v-bind双向绑定。</p>
 <p>局部刷新，懒加载</p>
+<hr>
+<h4 id="Get和Post有什么区别？"><a href="#Get和Post有什么区别？" class="headerlink" title="Get和Post有什么区别？"></a>Get和Post有什么区别？</h4><h4 id="Tcp和Udp有什么区别？"><a href="#Tcp和Udp有什么区别？" class="headerlink" title="Tcp和Udp有什么区别？"></a>Tcp和Udp有什么区别？</h4><h4 id="cookie和session有什么区别？"><a href="#cookie和session有什么区别？" class="headerlink" title="cookie和session有什么区别？"></a>cookie和session有什么区别？</h4><h4 id="元素居中有那些方法"><a href="#元素居中有那些方法" class="headerlink" title="元素居中有那些方法"></a>元素居中有那些方法</h4><hr>
+<h4 id="TCP和UDP有什么区别？"><a href="#TCP和UDP有什么区别？" class="headerlink" title="TCP和UDP有什么区别？"></a>TCP和UDP有什么区别？</h4><p>首先，传输控制协议TCP和用户数据报协议UDP都是传输层的协议。</p>
+<p>UDP向上层提供无连接不可靠的服务。而TCP向上层提供面向连接的可靠的数据传输服务。所谓UDP的无连接就是指在发送数据之前不需要建立连接，而TCP发送数据前需要先使用“三次握手”建立连接，发送完成后使用“四次挥手”释放连接。也正是因为如此，TCP只可提供点对点、一对一的服务，而UDP是支持单播、多播、广播。</p>
+<p>其次，不可靠是指UDP使用尽最大努力交付，应用于一些对实时性要求比较高的场合，如IP电话，视频会议等。TCP向上提供可靠交付的服务，保证数据无差错、不重复、不丢失、不失序。可以用于文件传输。也正因为如此，UDP首部开销小，只有8个字节。TCP首部开销大，需要20～60个字节。</p>
+<p>最后，UDP是面向报文的。UDP对应用层交下来的报文，既不合并也不拆分，保留这些报文边界，原封不动的发送；TCP是面向字节4流的，不保证收到的数据块和发出的数据块具有对应的大小关系，而是会自动的进行拆分跟合并，接收方必须有能力识别收到的字节流，把它还原成有意义的应用层数据。</p>
+<h4 id="HTTP和HTTPS有什么区别？"><a href="#HTTP和HTTPS有什么区别？" class="headerlink" title="HTTP和HTTPS有什么区别？"></a>HTTP和HTTPS有什么区别？</h4><p>首先这两个都是应用层协议</p>
+<p>HTTP是无连接、无状态的</p>
+<p>HTTP：HyperText Transfer Protocol 超文本传输协议。是用于在互联网上查看网页的协议。在标准HTTP中，所有信息都以明文发送，浏览器和服务器之间交换的所有信息都通过公共的互联网进行传输，所以是不安全的。也正因为如此，我们有了HTTPS协议，多的这个S就是 Secure 。HTTPS 是通过SSL协议来保护数据的，SSL 是 SecureSocket Layer 安全层。SSL 的基本工作原理是，网页浏览器会要求网站确认自己的身份，服务器会向浏览器发送安全证书。HTTPS会加密有HTTP发送的数据，确保了计算机和服务器之间传送的数据都是安全的。通过使用加密算法，来打乱发送的数据。即使被黑客窃取了，他得到的也是一堆无意义的数据，也无法从这些加密数据中破解出有价值的信息。就像我们平常在使用浏览器时，地址栏中就会用红色不安全或者绿色的小锁来提示你是否安全。</p>
+<h4 id="SRAM和DRAM有什么区别？"><a href="#SRAM和DRAM有什么区别？" class="headerlink" title="SRAM和DRAM有什么区别？"></a>SRAM和DRAM有什么区别？</h4><p>SRAM和DRAM都属于RAM，随机读写存储器。能读能写。断电时数据丢失。</p>
+<p>SRAM是用双稳态触发器来记忆信息的，所以上面的数据是稳定的；但SRAM从半导体制造工艺上来看，集成度低，容量不容易扩大，价格贵，速度很快，常用来做cache。</p>
+<p>DRAM是由电容做的，电容存在泄漏问题，需要定时刷新保证数据的正确。DRAM比SRAM要慢， 但造价更低， 容量也比SRAM大得多， 在计算机中主要用来做内存。</p>
+<h4 id="同步通信与异步通信的区别？"><a href="#同步通信与异步通信的区别？" class="headerlink" title="同步通信与异步通信的区别？"></a>同步通信与异步通信的区别？</h4><p>同步通信：通信双方按照相同的时钟频率，在同样的节拍下收发数据。不需要发送数据分隔信息。传送数据的同时，还需要传送时钟信号，来保证有相同的时钟频率。</p>
+<p>异步通信：发送和接收的双方必须约定相同的帧格式，否则会造成传输错误。在异步通信方式中，发送方只发送数据帧，不传输时钟</p>
+<h4 id="Hadoop简介"><a href="#Hadoop简介" class="headerlink" title="Hadoop简介"></a>Hadoop简介</h4><p>Hadoop两大核心：分布式文件系统 HDFS + 分布式并行编程框架 MapReduce</p>
+<p>解决了大数据最关键的两个问题，一个是怎么实现海量数据的分布式存储问题，一个是怎么实现海量数据分布式处理。</p>
+<p>HDFS 解决了怎么用成百上千台服务器存储几十T，上百T海量数据。MapReduce解决怎么用几千台服务器完成一个任务的并行式处理。</p>
+<p>Spark：功能类似于MapReduce，但他是基于内存的。而MapReduce是基于磁盘的。</p>
+<p>Hadoop特性：</p>
+<p>​    1、可靠性：Hadoop采用冗余副本机制，某一部分机器发生故障，剩余机器可以继续提供服务。</p>
+<p>​    2、高效行：因为是一个集群来做运算，成百上千台服务器一起算，可以高效的处理海量数据。</p>
+<p>​    3、可扩展性：在一个Hadoop集群里，你可以十个结点也可以二十个结点，可以不断的向集群中增加机器。</p>
+<p>​    4、成本低：可以使用普通的PC机来构成一个集群。</p>
+<h4 id="说一下你的《博客》这个项目"><a href="#说一下你的《博客》这个项目" class="headerlink" title="说一下你的《博客》这个项目"></a>说一下你的《博客》这个项目</h4><h4 id="说说你的毕业设计"><a href="#说说你的毕业设计" class="headerlink" title="说说你的毕业设计"></a>说说你的毕业设计</h4><p>因为现在网课很普遍，所以我的毕业设计做的是《学生在线考试系统》，是一个前后端分离的项目。前端用的框架是Vue，后端用的框架是SpringBoot。主要功能有：学生可以参加考试，查看自己所选课程的考试安排，查分之类的；教师可以发布考试，查看某个班的成绩，系统可以对学生的成绩进行一个数据可视化。最核心的功能还是组卷，教师可以手工组卷，也可以随机组卷。随机组卷的实现方法</p>
+<h4 id="说一下对前后端分离的理解"><a href="#说一下对前后端分离的理解" class="headerlink" title="说一下对前后端分离的理解"></a>说一下对前后端分离的理解</h4><h4 id="说一下对SpringBoot的理解"><a href="#说一下对SpringBoot的理解" class="headerlink" title="说一下对SpringBoot的理解"></a>说一下对SpringBoot的理解</h4><h4 id="说一下对Vue的理解"><a href="#说一下对Vue的理解" class="headerlink" title="说一下对Vue的理解"></a>说一下对Vue的理解</h4><h4 id="人工智能"><a href="#人工智能" class="headerlink" title="人工智能"></a>人工智能</h4><p>人工智能最主流的方法是机器学习，机器学习里的一类技术，深度学习是人工智能方向如此火热的原因。这里面最重要的两个问题是如何对问题进行<strong>建模</strong>，和如何采集数据来确定模型中的<strong>参数</strong>。建模需要线性代数和统计，定参数就需要计算机编程。人工智能既需要数学工具建模，也需要用计算机编程来求解。</p>
+<p>机器学习：是不使用显式编程的AI子集。但需要人类预先定义学习特征。分类问题，对目标进行有限的分类（猫、狗）、回归问题–结果是一个连续数字，例如房屋价格，提供训练集，机器调整参数，给出新房子的大致价格</p>
+<p>深度学习是机器学习的子集。理论上不需要人类定义特征。受人脑神经元启发， 创建一个人工神经网络，当这个网络有多层时，就把它称作“深度学习”。</p>
+<p>因此，用深度学习，我们只需要给机器大量的猫、狗的训练集，而不需要人类定义出猫和狗的特征，让机器自己发现猫和狗的区别，并训练机器自己区分猫和狗。</p>
 
             </div>
             <hr>
